@@ -15,7 +15,7 @@ python -m kryptos.search   # direct periodic + autokey searches
 |---|---|---|---|
 | Vigenère / Beaufort / variant, periodic | A–Z, KRYPTOS | periods 1–48 | ruled out (periods 27–29 match only because they impose no constraint) |
 | Plaintext / ciphertext autokey | A–Z, KRYPTOS | primer length 1–96 | ruled out |
-| Keyed columnar transposition + periodic substitution, either order | A–Z, KRYPTOS | widths 2–9, periods 1–26, ≥6 checked crib letters | ruled out |
+| Keyed columnar transposition + periodic substitution, either order | A–Z, KRYPTOS | widths 2–10, periods 1–26, ≥6 checked crib letters | ruled out |
 | Periodic substitution with *arbitrary* alphabets (covers all Quagmires, any keywords) | any | periods 1–48 | ruled out for periods 1–7, 9, 10, 14, 15, 17, 21, 25, 34, 42, 43, 45; other periods are unconstrained by the cribs |
 | Same, after keyed columnar transposition (either order) | any | widths 2–8, periods 1–26 | no significant fit (best fits check only 4 crib letters; shuffled K4 gives as many) |
 | Running key: K1–K3 plaintext, Carter's *Tomb of Tut.ankh.Amen* vols 1–2 | A–Z, KRYPTOS | every offset, forwards and reversed | ruled out (best 8/24, chance level) |
