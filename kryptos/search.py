@@ -16,10 +16,10 @@ CRIB = sorted(crib_positions().items())
 CRIB_IDX = np.array([i for i, _ in CRIB])
 
 
-def _key_values(alphabet, variant, ct_positions, ct_text=K4):
+def _key_values(alphabet, variant, ct_positions, ct_text=None):
     """Key indices implied by the cribs, given which ct position holds each crib letter."""
     idx = {ch: i for i, ch in enumerate(alphabet)}
-    ct = np.array([idx[c] for c in ct_text])
+    ct = np.array([idx[c] for c in (ct_text or K4)])
     pt = np.array([idx[p] for _, p in CRIB])
     c = ct[ct_positions]
     return VARIANTS[variant](c, pt)
